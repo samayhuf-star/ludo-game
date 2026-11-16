@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "ludo-scaffold",
-    "slug": "ludo-scaffold",
+    "name": "Ludo Honest",
+    "slug": "ludo-honest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.samay.ludohonest",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +25,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "ludohonest"
   }
 }
