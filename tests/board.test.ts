@@ -2,7 +2,7 @@ import test from 'node:test'; import assert from 'node:assert/strict';
 import { PATH, HOME_CELLS } from '../src/board'; import { START } from '../src/engine';
 test('track is a closed loop of 52 distinct adjacent cells', () => {
   assert.equal(new Set(PATH.map((p) => p.join())).size, 52);
-  PATH.forEach(([r, c], i) => { const [r2, c2] = PATH[(i + 1) % 52]; assert.equal(Math.max(Math.abs(r - r2), Math.abs(c - c2)), 1, `gap after ${i}`); // the 4 corner steps are diagonal, as on a real board });
+  PATH.forEach(([r, c], i) => { const [r2, c2] = PATH[(i + 1) % 52]; assert.equal(Math.max(Math.abs(r - r2), Math.abs(c - c2)), 1, `gap after ${i}`); });
 });
 test('home columns connect to the track and do not overlap it', () => {
   const track = new Set(PATH.map((p) => p.join()));
