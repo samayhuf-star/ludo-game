@@ -12,8 +12,8 @@ export default function App() {
   if (!seen) return <Onboarding onDone={async (pw) => { await AsyncStorage.setItem('onboarded.v1', '1'); setSeen(true); if (pw) showPaywall(); }} />;
   if (play) return <><StatusBar style="light" /><GameScreen players={play} human={0} onExit={() => setPlay(null)} /></>;
   return (<View style={{ flex: 1, backgroundColor: C.bg, padding: 24, justifyContent: 'center' }}><StatusBar style="light" />
-    <Text style={{ fontSize: 46, textAlign: 'center' }}>🎲</Text><Text style={{ color: C.text, fontSize: 36, fontWeight: '900', textAlign: 'center' }}>Ludo Honest</Text>
-    <Text style={{ color: C.accent, textAlign: 'center', fontWeight: '700', marginBottom: 32 }}>{pro ? 'Pro unlocked' : 'Dice you can verify'}</Text>
+    <Text style={{ fontSize: 46, textAlign: 'center' }}>🎲</Text><Text style={{ color: C.text, fontSize: 36, fontWeight: '900', textAlign: 'center' }}>Ludo Meets Snake</Text>
+    <Text style={{ color: C.accent, textAlign: 'center', fontWeight: '700', marginBottom: 32 }}>{pro ? 'Pro unlocked' : 'Dice you can verify. Beware the snakes.'}</Text>
     {([['Play vs 1 bot', [0, 2]], ['Play vs 3 bots', [0, 1, 2, 3]]] as [string, Color[]][]).map(([t, p]) => <Pressable key={t} onPress={() => setPlay(p)} style={{ backgroundColor: C.accent, borderRadius: 18, paddingVertical: 18, marginBottom: 12 }}><Text style={{ color: '#1a1200', fontWeight: '900', fontSize: 18, textAlign: 'center' }}>{t}</Text></Pressable>)}
     <Pressable onPress={() => (pro ? restore() : showPaywall())} style={{ padding: 14 }}><Text style={{ color: C.dim, textAlign: 'center', fontWeight: '700' }}>{pro ? 'Restore purchases' : 'Go Pro · 7-day free trial'}</Text></Pressable></View>);
 }

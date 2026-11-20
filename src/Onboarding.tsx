@@ -5,6 +5,7 @@ import { C } from './theme';
 const PAGES = [
   { e: '🎲', t: 'Dice you can verify', b: 'Every game locks in a secret seed before the first roll. At the end you can check every single roll yourself. No rigging. Ever.', c: ['#3A1A1C', '#0E1420'] },
   { e: '🤝', t: 'Fair play, no tricks', b: 'No rubber banding, no luck you can buy, no ads between turns. Just classic Ludo, played honestly.', c: ['#10301F', '#0E1420'] },
+  { e: '🐍', t: 'Watch out for snakes', b: 'Six snakes lurk on the track. Land on a head and you slide back 7 or 8 steps. Plan your moves, and use them to your advantage.', c: ['#10301F', '#0E1420'] },
   { e: '🏆', t: 'Beat the bots', b: 'Play 2 to 4 players against smart bots. Race four tokens home and capture to send rivals back.', c: ['#33280A', '#0E1420'] },
 ] as const;
 const GET = [['🔒', 'Fairness proof for every game'], ['🤖', 'Unlimited games vs all bot levels'], ['🚫', 'No ads, ever'], ['🎨', 'All boards and dice themes']];
