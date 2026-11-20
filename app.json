@@ -26,6 +26,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme": "ludohonest"
+    "scheme": "ludohonest",
+    "owner": "krosz",
+    "extra": {
+      "eas": {
+        "projectId": "a14c1683-ef83-4d99-b60f-00bff87ff54e"
+      }
+    }
   }
 }
