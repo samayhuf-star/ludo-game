@@ -12,6 +12,19 @@
       "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
       }
     },
     "android": {
@@ -32,7 +45,9 @@
     "extra": {
       "eas": {
         "projectId": "a14c1683-ef83-4d99-b60f-00bff87ff54e"
-      }
-    }
+      },
+      "privacyPolicyUrl": "https://samayhuf-star.github.io/app-legal/ludo-game/privacy.html"
+    },
+    "description": "Classic Ludo with snakes on the track and dice you can verify. Every roll comes from a seed committed before the game starts."
   }
 }
